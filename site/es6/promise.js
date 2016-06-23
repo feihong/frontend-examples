@@ -9,15 +9,9 @@ example('Promise', (console) => {
 
   console.log('0 seconds')
 
-  sleep(2000).then(() => {
-    console.log('2 seconds')
-  })
+  sleep(2000).then(() => console.log('2 seconds'))
 
-  sleep(5000).then(() => {
-    console.log('5 seconds')
-  })
+  sleep(5000).then(() => console.log('5 seconds'))
 
-  sleep(9000).then(() => {
-    console.log('9 seconds')
-  })
+  sleep(9000).then(() => console.log('9 seconds'))
 })
