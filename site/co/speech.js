@@ -9,11 +9,17 @@ example('Web Speech API', (console) => {
     })
   }
 
+  let phrases = [
+    'Who let the dogs out?',
+    'Remember to always be yourself. Unless you suck.',
+    'I must not fear. Fear is the mind killer.'
+  ]
+
   co(function* () {
-    yield speak('Who let the dogs out?')
-    yield sleep(1)
-    yield speak('Remember to always be yourself. Unless you suck.')
-    yield sleep(2)
-    yield speak('I must not fear. Fear is the mind killer.')
+    for (let phrase of phrases) {
+      console.log(phrase)
+      yield speak(phrase)
+      yield sleep(1)
+    }
   })
 })

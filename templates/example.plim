@@ -2,8 +2,9 @@
 
 -block scripts
   = parent.scripts()
+  script src='https://cdnjs.cloudflare.com/ajax/libs/co/4.1.0/index.min.js'
   = script(BASE + 'scripts/example.coffee')
-  
+
 h1 = title
 
 .nav

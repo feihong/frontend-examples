@@ -4,10 +4,6 @@ title: Co Examples
 
 -inherit example.plim
 
--block scripts
-  = parent.scripts()
-  script src='https://cdnjs.cloudflare.com/ajax/libs/co/4.1.0/index.min.js'
-
 -block nav
   ul
     -for f in (f for f in PATH.parent.iterdir() if f.suffix == '.js')
