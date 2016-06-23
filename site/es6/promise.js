@@ -1,6 +1,7 @@
 'use strict';
 
 example('Promise', (console) => {
+  // Note that we already defined this in scripts/example.coffee.
   function sleep(delay) {
     return new Promise((resolve, reject) => {
       window.setTimeout(resolve, delay * 1000)

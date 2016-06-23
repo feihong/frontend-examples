@@ -1,12 +1,6 @@
 'use strict';
 
 example('Co Quickstart', (console) => {
-  function sleep(delay) {
-    return new Promise((resolve, reject) => {
-      window.setTimeout(resolve, delay * 1000)
-    })
-  }
-
   let counterDiv = $('<p>')
     .text('0')
     .css('background-color', 'palegoldenrod')

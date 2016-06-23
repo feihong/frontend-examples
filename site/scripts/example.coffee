@@ -14,3 +14,8 @@ $('.nav').on('click', 'li', (evt) ->
   $('.script-container').empty()
   $('<script>').attr('src', evt.target.href).appendTo('.script-container')
 )
+
+window.sleep = (delay) ->
+  return new Promise((resolve, reject) ->
+    window.setTimeout(resolve, delay * 1000)
+  )
