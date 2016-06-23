@@ -2,10 +2,11 @@ title: RxJS Examples
 
 ===
 
+-inherit example.plim
+
 -block scripts
   = parent.scripts()
-
--inherit example.plim
+  script src='https://cdnjs.cloudflare.com/ajax/libs/rxjs/4.1.0/rx.all.min.js'
 
 -block nav
   ul
