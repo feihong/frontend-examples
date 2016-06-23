@@ -1,0 +1,14 @@
+title: RxJS Examples
+
+===
+
+-block scripts
+  = parent.scripts()
+
+-inherit example.plim
+
+-block nav
+  ul
+    -for f in (f for f in PATH.parent.iterdir() if f.suffix == '.coffee')
+      li
+        a(href='${f.name}') ${f.stem}
