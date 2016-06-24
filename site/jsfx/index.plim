@@ -7,9 +7,3 @@ title: Jsfx Examples
 -block scripts
   = parent.scripts()
   script src='${BASE}scripts/jsfx.js'
-
--block nav
-  ul
-    -for f in (f for f in PATH.parent.iterdir() if f.suffix == '.coffee')
-      li
-        a(href='${f.name}') ${f.stem}

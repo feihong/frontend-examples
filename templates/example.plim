@@ -5,10 +5,24 @@
   script src='https://cdnjs.cloudflare.com/ajax/libs/co/4.1.0/index.min.js'
   = script(BASE + 'scripts/example.coffee')
 
+-def get_files_toc()
+  --- files = (f for f in PATH.parent.iterdir() if f.suffix in ('.js', '.coffee'))
+  ul
+    -for f in files
+      li
+        ---
+          if MODE == 'serve':
+            name = f.name
+          else:
+            name = f.stem + '.js'
+
+        a href='${name}'
+          = f.stem
+
 h1 = title
 
 .nav
-  -block nav
+  = get_files_toc()
 .output
   h2.example-title
   .console

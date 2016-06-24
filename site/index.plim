@@ -7,7 +7,7 @@ title: Home
 h1 = title
 
 -md
-  - [RxJS](rxjs/)
-  - [ES6](es6/)
-  - [co](co/)
-  - [jsfx](jsfx/)
+  - [ES6](es6/) - the new age of JavaScript
+  - [RxJS](rxjs/) - functional reactive programming
+  - [co](co/) - Generator-based control flow
+  - [jsfx](jsfx/) - Sound effects
