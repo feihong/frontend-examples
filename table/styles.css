@@ -1,0 +1,16 @@
+form {
+  display: table;
+  border-spacing: 1em 0.2em;
+}
+form .row {
+  display: table-row;
+}
+form .row label {
+  display: table-cell;
+}
+form .row label.top {
+  vertical-align: top;
+}
+form .row .cell {
+  display: table-cell;
+}
