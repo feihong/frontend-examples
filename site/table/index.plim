@@ -9,15 +9,21 @@ title: CSS Table
 h1 = title
 
 form
-  p
+  .row
     label Number of attendees
-    input name='attendees' type='number'
-  p
+    input.cell name='attendees' type='number'
+  .row
     label Tax percentage
-    input name='tax'
-  p
+    input.cell name='tax'
+  .row
     label Tip percentage
-    input name='tip'
-  p
+    input.cell name='tip'
+  .row
     label Comments
-    textarea name='comments' rows='5'
+    textarea.cell name='comments' rows='5'
+  .row
+    .cell
+    .cell This is a cell that only has text
+  .row
+    .cell
+    button.cell Submit
