@@ -19,7 +19,7 @@ form
     label Tip percentage
     input.cell name='tip'
   .row
-    label Comments
+    label.top Comments
     textarea.cell name='comments' rows='5'
   .row
     .cell
