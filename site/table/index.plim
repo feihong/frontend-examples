@@ -1,0 +1,23 @@
+title: Form layout using display:table
+
+===
+-inherit styling_example.plim
+
+-def body_class()
+  = 'container'
+
+h1 = title
+
+form
+  p
+    label Number of attendees
+    input name='attendees' type='number'
+  p
+    label Tax percentage
+    input name='tax'
+  p
+    label Tip percentage
+    input name='tip'
+  p
+    label Comments
+    textarea name='comments'

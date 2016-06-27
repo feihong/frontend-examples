@@ -17,4 +17,5 @@ hr
 
   ## Styling
 
-  - [Flexbox](flexbox/)
+  - [Fullscreen flexbox](flexbox/)
+  - [Form layout using display:table](table/)
