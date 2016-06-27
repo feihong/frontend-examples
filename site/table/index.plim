@@ -1,4 +1,4 @@
-title: Form layout using display:table
+title: CSS Table
 
 ===
 -inherit styling_example.plim
@@ -20,4 +20,4 @@ form
     input name='tip'
   p
     label Comments
-    textarea name='comments'
+    textarea name='comments' rows='5'
