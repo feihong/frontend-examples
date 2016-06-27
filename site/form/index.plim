@@ -1,0 +1,35 @@
+title: Responsive form
+
+===
+-inherit styling_example.plim
+
+-def body_class()
+  = 'container'
+
+h1 = title
+
+form.form-horizontal
+  .form-group
+    label.control-label class='col-sm-2' Number of attendees
+    div class='col-sm-10'
+      input.form-control name='attendees' type='number'
+  .form-group
+    label.control-label class='col-sm-2' Tax percentage
+    div class='col-sm-10'
+      input.form-control name='tax'
+  .form-group
+    label.control-label class='col-sm-2' Tip percentage
+    div class='col-sm-10'
+      input.form-control name='tip'
+  .form-group
+    label.control-label class='col-sm-2' Comments
+    div class='col-sm-10'
+      textarea.form-control name='comments' rows='5'
+      p This is some text on something
+  .form-group
+    div class='col-sm-offset-2 col-sm-10'
+      label
+        input type='checkbox' Remember me
+  .form-group
+    div class='col-sm-offset-2 col-sm-10'
+      button.btn.btn-default type='submit' Submit
