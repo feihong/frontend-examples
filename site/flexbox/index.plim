@@ -1,0 +1,13 @@
+title: Fullscreen Flexbox
+
+===
+-inherit styling_example.plim
+
+header.bg-success
+  h1 = title
+  p This is the header
+main.bg-warning
+  p The main section
+  p It will expand to fill up all the available space
+footer.bg-info
+  p The footer

@@ -1,0 +1,10 @@
+-inherit base.plim
+
+-def body_class()
+  = ''
+
+-block extrahead
+  =parent.extrahead()
+  =stylesheet('styles.styl')
+
+= next.body()

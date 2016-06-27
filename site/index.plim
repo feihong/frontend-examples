@@ -5,9 +5,16 @@ title: Home
 -inherit base.plim
 
 h1 = title
+hr
 
 -md
+  ## Scripting
+
   - [ES6](es6/) - the new age of JavaScript
   - [RxJS](rxjs/) - functional reactive programming
   - [co](co/) - Generator-based control flow
   - [jsfx](jsfx/) - Sound effects
+
+  ## Styling
+
+  - [Flexbox](flexbox/)
