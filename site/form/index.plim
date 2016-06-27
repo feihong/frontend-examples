@@ -25,11 +25,12 @@ form.form-horizontal
     label.control-label class='col-sm-2' Comments
     div class='col-sm-10'
       textarea.form-control name='comments' rows='5'
-      p This is some text on something
+      div.text-muted Here is some text commenting on something or other
   .form-group
     div class='col-sm-offset-2 col-sm-10'
-      label
-        input type='checkbox' Remember me
+      div.checkbox
+        label
+          input type='checkbox' Remember me
   .form-group
     div class='col-sm-offset-2 col-sm-10'
       button.btn.btn-default type='submit' Submit
