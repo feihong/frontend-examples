@@ -21,11 +21,15 @@ form.form-horizontal
   .form-group
     = label('Tax percentage')
     div class='col-sm-${rightw}'
-      input.form-control name='tax' value=9.75
+      .input-group
+        input.form-control name='tax' value=9.75
+        .input-group-addon %
   .form-group
     = label('Tip percentage')
     div class='col-sm-${rightw}'
-      input.form-control name='tip' value=20
+      .input-group
+        input.form-control name='tip' value=20
+        .input-group-addon %
   .form-group
     = label('Comments')
     div class='col-sm-${rightw}'
