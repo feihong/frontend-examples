@@ -21,10 +21,14 @@
 
 h1 = title
 
+.desc
+  -block desc
+
 .nav
   = get_files_toc()
 .output
   h2.example-title
   .console
+
 
 .script-container
