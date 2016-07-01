@@ -13,6 +13,10 @@
     return fn(fakeConsole);
   };
 
+  window.plog = function(text) {
+    return $('<p>').text(obj).appendTo('.console');
+  };
+
   $('.nav').on('click', 'li', function(evt) {
     evt.preventDefault();
     $('.console').empty();

@@ -1,0 +1,11 @@
+.html5 {
+  margin-bottom: 3em;
+}
+progress,
+.progress {
+  flex: 1;
+}
+.percent {
+  width: 2em;
+  margin-right: 1em;
+}
