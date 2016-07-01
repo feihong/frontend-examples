@@ -13,6 +13,15 @@ title: Progress bar examples
     How to use the HTML5 and Bootstrap progress bars.
 
 -block content
+  p HTML progress element
+
   .hbox.html5
     .percent 0%
     progress value=0 max=100
+
+  p Bootstrap progress bar
+
+  .hbox.bs
+      .percent 0%
+      .progress
+        div.progress-bar.progress-bar-info.progress-bar-striped
