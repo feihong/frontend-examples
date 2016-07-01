@@ -26,7 +26,7 @@ updateThrottledProgressBar = () ->
   pd = progressDisplay('.throttle', total)
   rtValue = $('.realtime-value')
   co(() ->
-    for i in [1..total]
+    for i in [1..350]
       rtValue.text(i)
       pd.setValue(i)
       yield sleep 0.05
@@ -37,7 +37,8 @@ progressDisplay = (container, max) ->
   newValue = null
   running = false
   percDiv = $(container).find('.percent')
-  progDiv = $(container).find('.progress-bar')
+  barDiv = $(container).find('.progress-bar')
+  progDiv = $(container).find('.progress')
 
   setValue = (val) ->
     newValue = val / max * 100
@@ -45,10 +46,13 @@ progressDisplay = (container, max) ->
     if not running
       co(() ->
         running = true
+        progDiv.addClass('active')
         while newValue != null
           percDiv.text "#{newValue.toFixed(0)}%"
-          progDiv.css 'width', "#{newValue}%"
+          barDiv.css 'width', "#{newValue}%"
+          newValue = null
           yield sleep 1
+        progDiv.removeClass('active')
         running = false
       )
 
