@@ -26,7 +26,7 @@ updateThrottledProgressBar = () ->
   pd = progressDisplay('.throttle', total)
   rtValue = $('.realtime-value')
   co(() ->
-    for i in [1..350]
+    for i in [1..total]
       rtValue.text(i)
       pd.setValue(i)
       yield sleep 0.05
@@ -60,5 +60,5 @@ progressDisplay = (container, max) ->
 
 ## MAIN
 
-# updateFirstTwoProgressBars()
+updateFirstTwoProgressBars()
 updateThrottledProgressBar()
