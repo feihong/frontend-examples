@@ -1,0 +1,18 @@
+title: Progress bar examples
+
+===
+
+-inherit simple_example.plim
+
+-block extrahead
+  = parent.extrahead()
+  = stylesheet('styles.styl')
+
+-block desc
+  -md
+    How to use the HTML5 and Bootstrap progress bars.
+
+-block content
+  .hbox.html5
+    .percent 0%
+    progress value=0 max=100

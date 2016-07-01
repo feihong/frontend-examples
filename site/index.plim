@@ -14,6 +14,7 @@ hr
   - [RxJS](rxjs/) - functional reactive programming
   - [co](co/) - Generator-based control flow
   - [jsfx](jsfx/) - Sound effects
+  - [Progress bars](progress-bar/) - Both HTML5 and Bootstrap
 
   ## Styling
 

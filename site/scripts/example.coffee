@@ -4,9 +4,15 @@ fakeConsole = {
     $('<p>').text(obj).appendTo('.console')
 }
 
+
 window.example = (title, fn) ->
   $('.example-title').text(title)
   fn(fakeConsole)
+
+
+window.plog = (text) ->
+  $('<p>').text(obj).appendTo('.console')
+
 
 $('.nav').on('click', 'li', (evt) ->
   evt.preventDefault()
