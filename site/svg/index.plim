@@ -6,10 +6,16 @@ title: SVG
 -block extrahead
   =parent.extrahead()
   style
+    .item {
+      margin-bottom: 2em;
+    }
     .svg {
       background: url(italy.svg) no-repeat top left;
       padding: 2em;
       border: 1px solid gray;
+    }
+    .triangle {
+      background-color: lightgray;
     }
 
 -block desc
@@ -18,16 +24,26 @@ title: SVG
 -block content
   p Using the `code svg` tag:
 
-  <svg width="150" height="100" viewBox="0 0 3 2">
-    <rect width="1" height="2" x="0" fill="#008d46" />
-    <rect width="1" height="2" x="1" fill="#ffffff" />
-    <rect width="1" height="2" x="2" fill="#d2232c" />
-  </svg>
+  .item
+    <svg width="150" height="100" viewBox="0 0 3 2">
+      <rect width="1" height="2" x="0" fill="#008d46" />
+      <rect width="1" height="2" x="1" fill="#ffffff" />
+      <rect width="1" height="2" x="2" fill="#d2232c" />
+    </svg>
 
-  p In an `code img` tag (does not work in most browsers):
+  p In an `code img` tag (does not work):
 
-  img src='italy.svg'
+  .item
+    img src='italy.svg'
 
   p As the background image of a `code div` (also does not work):
 
-  .svg Bonjourno
+  .item
+    .svg Bonjourno
+
+  p A simple triangle:
+
+  .item
+    <svg class='triangle' width='100' height='100'>
+      <polygon points='50,0 100,0 100,50' />
+    </svg>
