@@ -1,9 +1,9 @@
 num = 4
 
-example 'subject', (console) ->
+example 'subject', () ->
   subject = new Rx.Subject()
   subject.subscribe (x) ->
-    console.log(x)
+    plog(x)
 
   for i in [1..3]
     subject.onNext(i)
@@ -14,5 +14,5 @@ example 'subject', (console) ->
     if num > 10
       window.clearInterval(intervalId)
       for i in [num..15]
-        console.log(i)
+        plog(i)
   , 500)

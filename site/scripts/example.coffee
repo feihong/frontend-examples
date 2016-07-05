@@ -1,13 +1,6 @@
-
-fakeConsole = {
-  log: (obj) ->
-    $('<p>').text(obj).appendTo('.console')
-}
-
-
 window.example = (title, fn) ->
   $('.example-title').text(title)
-  fn(fakeConsole)
+  fn()
 
 
 window.plog = (text) ->

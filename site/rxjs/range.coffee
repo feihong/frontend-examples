@@ -1,3 +1,3 @@
-example 'range', (console) ->
+example 'range', () ->
   Rx.Observable.range(103, 6)
-    .subscribe (x) -> console.log(x)
+    .subscribe (x) -> plog(x)
