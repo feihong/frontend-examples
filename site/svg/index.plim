@@ -5,18 +5,7 @@ title: SVG
 
 -block extrahead
   =parent.extrahead()
-  style
-    .item {
-      margin-bottom: 2em;
-    }
-    .svg {
-      background: url(italy.svg) no-repeat top left;
-      padding: 2em;
-      border: 1px solid gray;
-    }
-    .triangle {
-      background-color: lightgray;
-    }
+  =stylesheet('styles.styl')
 
 -block desc
   How to use SVGs.
