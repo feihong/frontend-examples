@@ -1,0 +1,13 @@
+title: Fixed position
+
+===
+-inherit styling_example.plim
+
+.topleft.fixed Top left
+.topright.fixed Top right
+.center.fixed Center
+
+.container
+  h1 = title
+  -for i in range(1, 150)
+    p This is paragraph ${i}
