@@ -1,0 +1,33 @@
+title: SVG
+
+===
+-inherit example.plim
+
+-block extrahead
+  =parent.extrahead()
+  style
+    .svg {
+      background: url(italy.svg) no-repeat top left;
+      padding: 2em;
+      border: 1px solid gray;
+    }
+
+-block desc
+  How to use SVGs.
+
+-block content
+  p Using the `code svg` tag:
+
+  <svg width="150" height="100" viewBox="0 0 3 2">
+    <rect width="1" height="2" x="0" fill="#008d46" />
+    <rect width="1" height="2" x="1" fill="#ffffff" />
+    <rect width="1" height="2" x="2" fill="#d2232c" />
+  </svg>
+
+  p In an `code img` tag (does not work in most browsers):
+
+  img src='italy.svg'
+
+  p As the background image of a `code div` (also does not work):
+
+  .svg Bonjourno
