@@ -2,7 +2,7 @@ title: Progress bar examples
 
 ===
 
--inherit simple_example.plim
+-inherit scripting_example.plim
 
 -block extrahead
   = parent.extrahead()
