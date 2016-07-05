@@ -19,25 +19,25 @@ custom = {
 library = Object.assign({}, presets, custom)
 sfx = jsfx.Sounds(library)
 
-example 'Quickstart', (console) ->
+example 'Quickstart', () ->
   co(() ->
-    console.log 'Presets:'
+    plog 'Presets:'
 
     # 'Note that it will load with a delay to avoid blocking the page load for
     # too long, so calling those function immediately may result in silence.'
     yield sleep(1)
 
     for key, value of presets
-      console.log(key)
+      plog(key)
       sfx[key]()
       yield sleep(1.5)
 
     yield sleep(2)
 
-    console.log 'Custom:'
+    plog 'Custom:'
 
     for key, value of custom
-      console.log(key)
+      plog(key)
       sfx[key]()
       yield sleep(1.5)
   )

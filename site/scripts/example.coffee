@@ -11,7 +11,7 @@ window.example = (title, fn) ->
 
 
 window.plog = (text) ->
-  $('<p>').text(obj).appendTo('.console')
+  $('<p>').text(text).appendTo('.console')
 
 
 $('.nav').on('click', 'li', (evt) ->

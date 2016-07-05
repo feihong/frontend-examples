@@ -2,12 +2,15 @@ title: Jsfx Examples
 
 ===
 
--inherit example.plim
+-inherit scripting_example.plim
 
 -block scripts
-  = parent.scripts()
   script src='${BASE}scripts/jsfx.js'
+  = parent.scripts()
 
 -block desc
   -md
     How to generate sound effects using [jsfx](https://github.com/loov/jsfx).
+
+-block content
+  .console
