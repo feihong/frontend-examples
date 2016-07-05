@@ -1,0 +1,11 @@
+-inherit base.plim
+
+h1 = title
+
+.desc
+  -block desc
+
+hr
+
+.content
+  -block content
