@@ -1,6 +1,6 @@
 'use strict';
 
-example('Co Quickstart', (console) => {
+example('Co Quickstart', () => {
   let counterDiv = $('<p>')
     .text('0')
     .css('background-color', 'palegoldenrod')
@@ -16,17 +16,17 @@ example('Co Quickstart', (console) => {
   })
 
   co(function* () {
-    console.log('0 seconds')
+    plog('0 seconds')
     yield sleep(1)
-    console.log('After 1 second')
+    plog('After 1 second')
     // throw 'Horrible error!'
     yield sleep(2)
-    console.log('After 2 seconds')
+    plog('After 2 seconds')
     yield sleep(3)
-    console.log('After 3 seconds')
+    plog('After 3 seconds')
     return 'wumpus'
   }).then(
-    (value) => console.log('All done! Result was: ' + value),
-    (error) => console.log('Error: ' + error)
+    (value) => plog('All done! Result was: ' + value),
+    (error) => plog('Error: ' + error)
   )
 })
