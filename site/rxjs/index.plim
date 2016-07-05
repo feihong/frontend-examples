@@ -2,7 +2,7 @@ title: RxJS Examples
 
 ===
 
--inherit example.plim
+-inherit scripting_multi.plim
 
 -block scripts
   = parent.scripts()
