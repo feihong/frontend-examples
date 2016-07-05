@@ -1,9 +1,12 @@
-.html5 {
+.hbox {
   margin-bottom: 3em;
 }
 progress,
 .progress {
   flex: 1;
+}
+.progress {
+  margin-bottom: 0;
 }
 .percent {
   width: 2em;

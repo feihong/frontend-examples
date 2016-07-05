@@ -1,0 +1,27 @@
+.fixed {
+  padding: 1em;
+  color: #fff;
+}
+.topleft {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  background-color: #dc143c;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.topright {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #ff8c00;
+}
+.center {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  background-color: #639;
+  font-size: 1.5em;
+  border-radius: 4em;
+  box-shadow: 0 0.1em 0.3em 0 rgba(0,0,0,0.5), 0 0.1em 0.6em rgba(0,0,0,0.4);
+}
