@@ -30,6 +30,13 @@ title: SVG
   .item
     .svg Bonjourno
 
+  p Reference the .svg file using `code xlink:href` attribute (not sure why this doesn't work).
+
+  .item
+    <svg width="150" height="100">
+      <use xlink:href='italy.svg'></use>
+    </svg>
+
   p A simple triangle:
 
   .item
