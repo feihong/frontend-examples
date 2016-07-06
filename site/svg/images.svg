@@ -1,0 +1,10 @@
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="italy" viewBox="0 0 3 2">
+      <rect width="1" height="2" x="0" fill="#008d46" />
+      <rect width="1" height="2" x="1" fill="#ffffff" />
+      <rect width="1" height="2" x="2" fill="#d2232c" />
+    </symbol>
+  </defs>
+</svg>
