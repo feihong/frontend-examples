@@ -37,25 +37,16 @@ title: SVG
   p A simple triangle:
 
   .item
-    <svg class='triangle' width='100' height='100' viewBox='0 0 1 1'>
+    <svg class='triangle' width='80' height='80' viewBox='0 0 1 1'>
       <polygon points='0,0 1,0 1,1' />
     </svg>
 
-  p Reference the .svg file using `code xlink:href` attribute (not sure why this doesn't work).
+  p In an `code img` tag:
 
   .item
-    <svg width="150" height="100">
-      <use xlink:href='images.svg#italy' />
-    </svg>
+    img width=150 src='italy.svg'
 
-  h2 Things that don't work
-
-  p In an `code img` tag (does not work):
-
-  .item
-    img src='italy.svg'
-
-  p As the background image of a `code div` (also does not work):
+  p As the background image of a `code div`:
 
   .item
     .svg Bonjourno
