@@ -1,6 +1,6 @@
 'use strict';
 
-example('Web Speech API', (console) => {
+example('Web Speech API', () => {
   function speak(text) {
     return new Promise((resolve, reject) => {
       let utterance = new SpeechSynthesisUtterance(text)
@@ -17,7 +17,7 @@ example('Web Speech API', (console) => {
 
   co(function* () {
     for (let phrase of phrases) {
-      console.log(phrase)
+      plog(phrase)
       yield speak(phrase)
       yield sleep(1)
     }

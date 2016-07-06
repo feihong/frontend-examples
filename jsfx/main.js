@@ -52,23 +52,23 @@
 
   sfx = jsfx.Sounds(library);
 
-  example('Quickstart', function(console) {
+  example('Quickstart', function() {
     return co(function*() {
       var key, results, value;
-      console.log('Presets:');
+      plog('Presets:');
       (yield sleep(1));
       for (key in presets) {
         value = presets[key];
-        console.log(key);
+        plog(key);
         sfx[key]();
         (yield sleep(1.5));
       }
       (yield sleep(2));
-      console.log('Custom:');
+      plog('Custom:');
       results = [];
       for (key in custom) {
         value = custom[key];
-        console.log(key);
+        plog(key);
         sfx[key]();
         results.push((yield sleep(1.5)));
       }

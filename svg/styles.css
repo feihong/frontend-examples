@@ -1,0 +1,14 @@
+.item {
+  margin-bottom: 3em;
+}
+.svg {
+  background: url("italy.svg") no-repeat top left;
+  padding: 1em;
+  border: 1px solid #808080;
+}
+.triangle {
+  background-color: #d3d3d3;
+}
+.triangle polygon {
+  background-color: #f00;
+}

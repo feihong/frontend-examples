@@ -1,6 +1,6 @@
 'use strict';
 
-example('Promise', (console) => {
+example('Promise', () => {
   // Note that we already defined this in scripts/example.coffee.
   function sleep(delay) {
     return new Promise((resolve, reject) => {
@@ -8,11 +8,11 @@ example('Promise', (console) => {
     })
   }
 
-  console.log('0 seconds')
+  plog('0 seconds')
 
-  sleep(2).then(() => console.log('2 seconds'))
+  sleep(2).then(() => plog('2 seconds'))
 
-  sleep(5).then(() => console.log('5 seconds'))
+  sleep(5).then(() => plog('5 seconds'))
 
-  sleep(9).then(() => console.log('9 seconds'))
+  sleep(9).then(() => plog('9 seconds'))
 })

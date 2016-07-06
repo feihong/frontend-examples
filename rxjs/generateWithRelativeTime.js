@@ -4,7 +4,7 @@
 
   todo = ['fix car', 'buy food', 'take meds', 'walk dog', 'order out', 'pick up dry cleaning'];
 
-  example('generateWithRelativeTime', function(console) {
+  example('generateWithRelativeTime', function() {
     return Rx.Observable.generateWithRelativeTime(0, function(i) {
       return i < todo.length;
     }, function(i) {
@@ -14,7 +14,7 @@
     }, function(i) {
       return 500;
     }).subscribe(function(x) {
-      return console.log(x);
+      return plog(x);
     });
   });
 

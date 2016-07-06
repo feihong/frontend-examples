@@ -1,6 +1,6 @@
 'use strict';
 
-example('Generators', (console) => {
+example('Generators', () => {
   function* values(n) {
     for (let i=0; i < n; i++) {
       yield i*2 + 1
@@ -8,6 +8,6 @@ example('Generators', (console) => {
   }
 
   for (let e of values(10)) {
-    console.log(e);
+    plog(e);
   }
 })

@@ -4,11 +4,11 @@
 
   num = 4;
 
-  example('subject', function(console) {
+  example('subject', function() {
     var i, intervalId, j, subject;
     subject = new Rx.Subject();
     subject.subscribe(function(x) {
-      return console.log(x);
+      return plog(x);
     });
     for (i = j = 1; j <= 3; i = ++j) {
       subject.onNext(i);
@@ -21,7 +21,7 @@
         window.clearInterval(intervalId);
         results = [];
         for (i = k = ref = num; ref <= 15 ? k <= 15 : k >= 15; i = ref <= 15 ? ++k : --k) {
-          results.push(console.log(i));
+          results.push(plog(i));
         }
         return results;
       }
