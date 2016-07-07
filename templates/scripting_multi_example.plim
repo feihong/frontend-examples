@@ -1,5 +1,9 @@
 -inherit base.plim
 
+-block extrahead
+  = parent.extrahead()
+  = stylesheet(BASE + 'styles/multi-example.styl')
+
 -block scripts
   = parent.scripts()
   script src='https://cdnjs.cloudflare.com/ajax/libs/co/4.1.0/index.min.js'
@@ -19,16 +23,19 @@
         a href='${name}'
           = f.stem
 
-h1 = title
+header
+  h1 = title
+  .desc
+    -block desc
+  hr
 
-.desc
-  -block desc
-
-.nav
-  = get_files_toc()
-.output
-  h2.example-title
-  .console
+main.hbox
+  .nav
+    h3 Scripts
+    = get_files_toc()
+  .content.vbox
+    h3.example-title ?
+    .console
 
 
 .script-container
