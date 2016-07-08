@@ -20,7 +20,7 @@
           else:
             name = f.stem + '.js'
 
-        a href='${name}'
+        a href='#${name}'
           = f.stem
 
 header
