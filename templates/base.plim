@@ -15,6 +15,11 @@ html lang='en'
   body class='${self.body_class()}'
     = next.body()
 
+    -block back_button
+      svg class='back-button' width='25' height='25' viewBox='0 0 1 1'
+        a(xlink:href='${BASE}')
+          polygon points='0,0 1,0 0,1'
+
     -block scripts
       script src='https://code.jquery.com/jquery-2.2.4.min.js' integrity='sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=' crossorigin='anonymous'
       script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS' crossorigin='anonymous'

@@ -4,6 +4,8 @@ title: Home
 
 -inherit base.plim
 
+-block back_button
+
 h1 = title
 hr
 
