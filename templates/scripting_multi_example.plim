@@ -21,7 +21,7 @@
             name = f.stem + '.js'
 
         a href='#${name}'
-          = name
+          = f.name
 
 header
   h1 = title
