@@ -12,6 +12,7 @@ plog = (text, cls) ->
 
 plog.highlight = (text) -> plog(text, 'highlight')
 plog.success = (text) -> plog(text, 'success')
+plog.error = (text) -> plog(text, 'error')
 
 
 window.plog = plog

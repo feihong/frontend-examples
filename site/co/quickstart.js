@@ -1,17 +1,14 @@
 'use strict';
 
 example('Co Quickstart', () => {
-  let counterDiv = $('<p>')
-    .text('0')
-    .css('background-color', 'palegoldenrod')
-    .appendTo('.console')
+  let counter = plog.highlight('0')
 
   co(function* () {
     let count = 0
     while (true) {
       yield sleep(1)
       count++
-      counterDiv.text(count)
+      counter.text(count)
     }
   })
 
@@ -26,7 +23,7 @@ example('Co Quickstart', () => {
     plog('After 3 seconds')
     return 'wumpus'
   }).then(
-    (value) => plog('All done! Result was: ' + value),
-    (error) => plog('Error: ' + error)
+    (value) => plog.success('All done! Result was: ' + value),
+    (error) => plog.error('Error: ' + error)
   )
 })
