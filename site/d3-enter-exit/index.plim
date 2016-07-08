@@ -19,9 +19,3 @@ title: D3 enter() and exit()
         th Name
         th Username
     tbody
-      tr
-        td Pikachu
-        td @pikapika
-      tr
-        td Megaman
-        td @pewpew
