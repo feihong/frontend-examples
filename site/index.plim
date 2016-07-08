@@ -28,3 +28,4 @@ hr
   ## Visualization
 
   - [SVG](svg/)
+  - [D3 enter() and exit()](d3-enter-exit/)
