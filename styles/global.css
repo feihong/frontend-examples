@@ -1,5 +1,8 @@
 .hbox {
   display: flex;
   flex-direction: row;
-  align-items: center;
+}
+.vbox {
+  display: flex;
+  flex-direction: column;
 }
