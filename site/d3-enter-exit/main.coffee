@@ -11,9 +11,10 @@ $('button.add').on 'click', () ->
 
 
 update = (data) ->
+  console.log data
   rows = tbody.selectAll('tr').data(data)
   tr = rows.enter().append('tr')
-  # rows.exit().remove()
+  rows.exit().remove()
 
   tr.selectAll('td')
       .data (d) ->
