@@ -3,8 +3,18 @@ window.example = (title, fn) ->
   fn()
 
 
-window.plog = (text) ->
-  $('<p>').text(text).appendTo('.console')
+plog = (text, cls) ->
+  p = $('<p>').text(text).appendTo('.console')
+  if cls
+    p.addClass cls
+  return p
+
+
+plog.highlight = (text) -> plog(text, 'highlight')
+plog.success = (text) -> plog(text, 'success')
+
+
+window.plog = plog
 
 
 $('.nav').on('click', 'li', (evt) ->

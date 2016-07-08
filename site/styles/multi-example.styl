@@ -6,9 +6,6 @@ body
   flex-direction column
   height 100%
 
-// header
-//   border-bottom 1px dashed gray
-
 main
   flex 1
   align-items: stretch;
@@ -27,8 +24,19 @@ main
       text-align center
 
     .console
-      padding 1em
       flex 1
       font-family monospace
       color lightgreen
       background-color black
+
+      p
+        padding 0em 1em
+        margin-bottom 0.2em
+
+        &.error
+          background-color crimson
+          color white
+
+        &.highlight
+          background-color gold
+          color darkslategray

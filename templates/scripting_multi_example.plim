@@ -34,7 +34,7 @@ main.hbox
     h3 Scripts
     = get_files_toc()
   .content.vbox
-    h3.example-title ?
+    h3.example-title | (none)
     .console
 
 
