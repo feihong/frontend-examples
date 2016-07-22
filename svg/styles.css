@@ -6,9 +6,9 @@
   padding: 1em;
   border: 1px solid #808080;
 }
-.triangle {
+.triangles {
   background-color: #d3d3d3;
 }
-.triangle polygon {
-  background-color: #f00;
+.triangles polygon {
+  fill: #4682b4;
 }
