@@ -8,5 +8,9 @@ title: Set clipboard text
   p Put text on the clipboard after clicking a button
 
 -block content
-  input value='你好世界'
-  button.btn.btn-primary Copy
+  div style='margin-bottom: 2em'
+    input readonly='' value='你好世界'
+    button.btn.btn-primary Copy
+
+  div
+    textarea rows=4 cols=50 placeholder='Here, try pasting the copied text here'
