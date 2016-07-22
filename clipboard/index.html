@@ -5,10 +5,12 @@
 container"><h1>Set clipboard text</h1><div class="desc">
 <p>Put text on the clipboard after clicking a button</p>
 </div><hr/><div class="content">
-<div style="margin-bottom: 2em"><input readonly="" value="你好世界"/><button class="btn btn-primary">Copy</button></div><div><textarea rows="4" cols="50" placeholder="Here, try pasting the copied text here"></textarea></div>
+<div style="margin-bottom: 2em"><span style="margin-right: 1em">你好世界</span><button data-clipboard-text="你好世界" class="btn btn-primary">Copy</button></div><div><textarea rows="4" cols="50" placeholder="Here, try pasting the copied text here"></textarea></div>
 </div>
 <svg width="25" height="25" viewBox="0 0 1 1" class="back-button"><a xlink:href="/frontend-examples/"><polygon points="0,0 1,0 0,1"></polygon></a></svg>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js">
+</script>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous">
 </script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
