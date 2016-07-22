@@ -4,13 +4,19 @@ title: Set clipboard text
 
 -inherit scripting_example.plim
 
+-block scripts
+  script src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js'
+  = parent.scripts()
+
+
 -block desc
   p Put text on the clipboard after clicking a button
 
+
 -block content
   div style='margin-bottom: 2em'
-    input readonly='' value='你好世界'
-    button.btn.btn-primary Copy
+    span style='margin-right: 1em' 你好世界
+    button.btn.btn-primary data-clipboard-text='你好世界' Copy
 
   div
     textarea rows=4 cols=50 placeholder='Here, try pasting the copied text here'
