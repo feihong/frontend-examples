@@ -1,0 +1,12 @@
+title: Set clipboard text
+
+===
+
+-inherit scripting_example.plim
+
+-block desc
+  p Put text on the clipboard after clicking a button
+
+-block content
+  input value='你好世界'
+  button.btn.btn-primary Copy

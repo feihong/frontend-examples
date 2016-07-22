@@ -17,6 +17,7 @@ hr
   - [co](co/) - Generator-based control flow
   - [jsfx](jsfx/) - Sound effects
   - [Progress bars](progress-bar/) - Both HTML5 and Bootstrap
+  - [Clipboard](clipboard/) - Set clipboard text
 
   ## Styling
 
